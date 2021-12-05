@@ -1,0 +1,50 @@
+<!-- <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">userId</th>
+        <th scope="col">id</th>
+        <th scope="col">title</th>
+        <th scope="col">body</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let li of listData">
+        <td>{{li.userId}}</td>
+        <td>{{li.id}}</td>
+        <td>{{li.title}}</td>
+        <td>{{li.body}}</td>
+        <td><i class="fa fa-edit" style="font-size:20px;color:red"></i> &nbsp;&nbsp;<i class="fa fa-trash" style="font-size:20px;color:red"></i></td>
+      </tr>
+    </tbody>
+  </table>
+
+  id:number;
+  name:string;
+  address:string;
+  Mobile:number;
+  email:string; -->
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">name</th>
+        <th scope="col">address</th>
+        <th scope="col">Mobile</th>
+        <th scope="col">email</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let li of listData">
+        <td>{{li.restid}}</td>
+        <td>{{li.name}}</td>
+        <td>{{li.address}}</td>
+        <td>{{li.mobile}}</td>
+        <td>{{li.email}}</td>
+        <td><a routerLink="/update/{{li.restid}}"><i class="fa fa-edit" style="font-size:20px;color:red"></i> </a>&nbsp;&nbsp;
+        <i (click)="deleteData(li.restid)" class="fa fa-trash" style="font-size:20px;color:red"></i></td>
+      </tr>
+    </tbody>
+  </table>

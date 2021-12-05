@@ -1,0 +1,14 @@
+.header-text{
+    color: aliceblue;
+    font-weight: bold;
+    padding-top: 115px;
+    text-align: center;
+    
+}
+.jumbotron{
+    background-image: url(https://www.dineout.co.in/blog/wp-content/uploads/2018/04/blog_banner_1.jpg);
+    background-repeat: no-repeat;
+    height: 355px;
+    width: 100%;
+    background-size: cover;
+}
